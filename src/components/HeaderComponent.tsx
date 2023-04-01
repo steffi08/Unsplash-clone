@@ -51,7 +51,7 @@ const HeaderComponent = (props: any) => {
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   useEffect(() => {
-    // getTopicList();
+   getTopicList();
   }, []);
   const getTopicList = () => {
     setTopicsList();
