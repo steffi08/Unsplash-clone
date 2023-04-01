@@ -51,7 +51,7 @@ const HeaderComponent = (props: any) => {
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   useEffect(() => {
-   getTopicList();
+    getTopicList();
   }, []);
   const getTopicList = () => {
     setTopicsList();
@@ -168,10 +168,13 @@ const HeaderComponent = (props: any) => {
           value={tabValue}
           onChange={handleChange}
         >
-          {topicList &&
+          {topicList.length > 0 ? (
             topicList.map((item: any) => {
               return <Tab label={item.slug} key={item.id} />;
-            })}
+            })
+          ) : (
+            <Tab label={"Item one"} />
+          )}
         </Tabs>
       </AppBar>
     </ElevationScroll>
