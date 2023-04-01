@@ -10,7 +10,7 @@ const useTopicSave = () => {
     setError(null);
     try {
       fetch(
-        `https://api.unsplash.com/topics?client_id=${process.env.REACT_APP_UNSPLASH_ACCESS_TOKEN}`
+        `https://api.unsplash.com/topics?client_id=Oe1MWtQpW8iDr1gqMv0v6YuEl3dkWPKpUFLJ-6DRcOk`
       )
         .then((response) => response.json())
         .then((data) => {

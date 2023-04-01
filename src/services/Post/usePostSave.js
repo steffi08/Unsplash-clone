@@ -10,7 +10,7 @@ const usePostSave = () => {
     setError(null);
     try {
       fetch(
-        `https://api.unsplash.com/search/photos?client_id=${process.env.REACT_APP_UNSPLASH_ACCESS_TOKEN}&query=${query}`
+        `https://api.unsplash.com/search/photos?client_id=Oe1MWtQpW8iDr1gqMv0v6YuEl3dkWPKpUFLJ-6DRcOk&query=${query}`
       )
         .then((response) => response.json())
         .then((data) => {
